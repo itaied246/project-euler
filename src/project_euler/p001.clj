@@ -1,3 +1,5 @@
+(defn multiple-of? [num div] (zero? (rem num div)))
+
 (->> (range 1000)
-     (filter #(or (zero? (rem % 5)) (zero? (rem % 3))))
+     (filter #(or (multiple-of? % 5) (multiple-of? % 3)))
      (reduce +))
