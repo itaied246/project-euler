@@ -1,4 +1,4 @@
-;(max-prime-factor 600851475143)
+; 6857
 
 (defn min-prime-factor
       [n]
@@ -10,3 +10,7 @@
            (if (= n k)
              k
              (recur (/ n k)))))
+
+(defn main
+  []
+  (max-prime-factor 600851475143))

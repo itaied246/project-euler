@@ -1,4 +1,6 @@
-(def fib-values 
+; 4613732
+
+(def fib-values
     (loop [a 1 
            b 2 
            result [a]] 
@@ -6,6 +8,8 @@
         result
         (recur b (+ b a) (conj result b)))))
 
-(->> fib-values
-     (filter even?)
-     (reduce +))
+(defn main
+  []
+  (->> fib-values
+       (filter even?)
+       (reduce +)))

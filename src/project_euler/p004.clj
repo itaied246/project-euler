@@ -1,3 +1,5 @@
+; 906609
+
 (defn half
   [s]
   (let [middle (quot (count s) 2)]
