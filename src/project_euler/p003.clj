@@ -1,4 +1,5 @@
 ; 6857
+(ns project-euler.p003)
 
 (defn min-prime-factor
       [n]

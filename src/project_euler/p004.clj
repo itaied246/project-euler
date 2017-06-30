@@ -1,4 +1,5 @@
 ; 906609
+(ns project-euler.p004)
 
 (defn half
   [s]

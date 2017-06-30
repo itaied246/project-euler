@@ -1,4 +1,5 @@
 ; 233168
+(ns project-euler.p001)
 
 (defn multiple-of? [num div] (zero? (rem num div)))
 
