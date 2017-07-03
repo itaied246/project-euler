@@ -1,6 +1,6 @@
 (ns project-euler.core
-  (:require [project-euler.p008 :as p008]))
+  (:require [project-euler.p010 :as p010]))
 
 (defn -main
   [& args]
-  (println (p008/main)))
+  (println (p010/main)))
