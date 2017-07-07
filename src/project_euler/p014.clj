@@ -26,6 +26,7 @@
 
 (defn main
   []
-  (let [range (range 1 top-bound)]
-    (key (apply max-key val
-                (zipmap range (map count-terms range))))))
+  (let [range (range 1 top-bound)
+        keys-terms (zipmap range (map count-terms range))]
+    (key
+      (apply max-key val keys-terms))))
