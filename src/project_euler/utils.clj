@@ -11,3 +11,7 @@
                             (take-while #(<= (* % %) n) prime-numbers)))
                     (iterate inc (inc x))))))))
     2))
+
+(defn char-int
+  [c]
+  (- (int c) (int \0)))
