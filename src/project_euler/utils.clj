@@ -15,3 +15,14 @@
 (defn char-int
   [c]
   (- (int c) (int \0)))
+
+(defn factorial
+  [n]
+  (reduce *' (range 1 (inc n))))
+
+(defn sum-of-digits
+  ([n] (sum-of-digits n 0))
+  ([n sum]
+   (if (zero? n)
+     sum
+     (recur (quot n 10) (+ sum (rem n 10))))))
