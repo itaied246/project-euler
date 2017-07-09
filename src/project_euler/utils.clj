@@ -26,3 +26,7 @@
    (if (zero? n)
      sum
      (recur (quot n 10) (+ sum (rem n 10))))))
+
+(defn fib
+  ([] (fib 1 1))
+  ([a b] (lazy-seq (cons a (fib b (+' a b))))))
